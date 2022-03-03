@@ -43,3 +43,44 @@ select {
 }
 
 /* Reset End */
+
+:root {
+  --primary: #242d38;
+  --secondary: #efd592;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--secondary);
+  padding: 10px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  color: var(--secondary);
+  background-color: var(--primary);
+}
+
+h1 {
+  color: #efd592;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.menu {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 16px;
+  }
+}
